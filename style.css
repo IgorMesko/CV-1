@@ -221,7 +221,19 @@ p
 }
 .container .footer
 {
-    position: relative;
     background-color: #ffffff;
-    padding: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 75px;
+}
+.footer img {
+    height: 50px;
+}
+.footer p {
+    font-size: 23px;
+}
+.footer__gitImg {
+    border-radius: 50%;
 }
