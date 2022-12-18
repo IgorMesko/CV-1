@@ -7,7 +7,7 @@
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/img/icons8-cv-30.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -16,7 +16,7 @@
             <div class="left-side">
                 <div class="profile-text">
                     <div class="imgBx">
-                        <img src="./assets/img/avatarka (1).jpg" alt="photo">
+                        <img src="./assets/img/photo.jpg" alt="photo">
                     </div>
                     <h1>Ihar Mesko</h1>
                 </div>
@@ -108,43 +108,43 @@
                         <div class="hard">
                             <h3>Hard Skills</h3>
                             <ul>
-                                <span class="text">JavaScript</span>
+                                <li class="text">JavaScript</li>
                             </ul>
                             <ul>
-                                <span class="text">Node.js</span>
+                                <li class="text">Node.js</li>
                             </ul>
                             <ul>
-                                <span class="text">Git</span>
+                                <li class="text">Git</li>
                             </ul>
                             <ul>
-                                <span class="text">MongoDB/PostgreSQL/MySQL</span>
+                                <li class="text">MongoDB/PostgreSQL/MySQL</li>
                             </ul>
                             <ul>
-                                <span class="text">Sequelize ORM</span>
+                                <li class="text">Sequelize ORM</li>
                             </ul>
                             <ul>
-                                <span class="text">Chai/Mocha</span>
+                                <li class="text">Chai/Mocha</li>
                             </ul>
                             <ul>
-                                <span class="text">GraphQL</span>
+                                <li class="text">GraphQL</li>
                             </ul>
                         </div>
                         <div class="soft">
                             <h3>Soft Skills</h3>
                             <ul>
-                                <span class="text">Teamplayer</span>
+                                <li class="text">Teamplayer</li>
                             </ul>
                             <ul>
-                                <span class="text">Hardworking</span>
+                                <li class="text">Hardworking</li>
                             </ul>
                             <ul>
-                                <span class="text">Organised</span>
+                                <li class="text">Organised</li>
                             </ul>
                             <ul>
-                                <span class="text">Flexible</span>
+                                <li class="text">Flexible</li>
                             </ul>
                             <ul>
-                                <span class="text">Creative</span>
+                                <li class="text">Creative</li>
                             </ul>
                         </div>
                     </div>
@@ -156,7 +156,7 @@
                         <pre class="code">
 function anagram(arr) {
     let result = 0;
-    for(let i = 0; i < arr.length; i++) {
+    for(let i = 0; i &lt arr.length; i++) {
         let word = arr[0].split('').sort().join('');
         if(arr[i].split('').sort().join('') === word) {
             result = true;
