@@ -1,0 +1,251 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body 
+{
+    background-color: #babcbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: #ffffff;
+    margin: 50px;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    min-height: 1000px;
+}
+.container .header
+{
+    position: relative;
+    background-color: #3b3b3d;
+    padding: 30px;
+}
+.container .left-side
+{
+    position: relative;
+    background-color: #3b3b3d;
+    padding: 50px;
+}
+.profile-text 
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profile-text .imgBx 
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.profile-text .imgBx img 
+{
+    position: absolute;
+    top:  0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile-text h2 
+{
+    color: #e0e0e0;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profile-text h2 span 
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.information
+{
+    padding-top: 40px;
+}
+.title
+{
+    color: #e0e0e0;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.information ul 
+{
+    position: relative;
+}
+.information ul li 
+{
+    position: relative;
+    list-style: none;
+    margin: 5px 0;
+    cursor: pointer;
+}
+.information ul li .icon 
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #e0e0e0;
+}
+.information ul li span 
+{
+    color: #e0e0e0;
+    font-weight: 300;
+}
+.information.education h5 
+{
+    color: #e0e0e0;
+    font-weight: 500;
+}
+.information.education h4
+{
+    color: #e0e0e0;
+    font-weight: 300;
+}
+.information.courses li
+{
+    margin-bottom: 10px;
+}
+.information.courses h5 
+{
+    color: #e0e0e0;
+    font-weight: 500;
+}
+.information.courses h4
+{
+    color: #e0e0e0;
+    font-weight: 300;
+}
+.container .rigth-side
+{
+    position: relative;
+    background-color: #ffffff;
+    padding: 50px;
+}
+.about 
+{
+    margin-bottom: 50px;
+}
+.about:last-child
+{
+    margin-bottom: 0;
+}
+.summary
+{
+    color: #3b3b3d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p 
+{
+    color: #3b3b3d;
+}
+.about .box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year
+{
+    min-width: 200px;
+}
+.about .box .year h4 
+{
+    text-transform: uppercase;
+    color: #3b3b3d;
+    font-weight: 600;
+}
+.about .box .text h4
+{
+    text-transform: uppercase;
+    color: #3b3b3d;
+    font-size: 16px;
+}
+.about .box .hard
+{
+    min-width: 300px;
+}
+.about .box .hard h3 
+{
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    line-height: 15px;
+    color: #3b3b3d;
+    font-weight: 600;
+}
+.about .box .soft h3
+{
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    line-height: 15px;
+    color: #3b3b3d;
+    font-weight: 600;
+}
+.about .box .text 
+{
+    text-transform: uppercase;
+    color: #3b3b3d;
+    font-weight: 600;
+}
+.about .code
+{
+    color: #3b3b3d;
+    font-weight: 600;
+}
+.container .footer
+{
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 75px;
+}
+.footer img {
+    height: 50px;
+}
+.footer p {
+    font-size: 23px;
+}
+.footer__gitImg {
+    border-radius: 50%;
+}
+
+@media (max-width: 1000px)
+{
+    .main 
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container
+    {
+        margin: 10px;
+    }
+}
