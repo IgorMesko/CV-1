@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/img/icons8-cv-30.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <main class="main">
+            <div class="left-side">
+                <div class="profile-text">
+                    <div class="imgBx">
+                        <img src="./assets/img/photo.jpg" alt="photo">
+                    </div>
+                    <h1>Ihar Mesko</h1>
+                </div>
+
+                <div class="information">
+                    <h3 class="title">Contact</h3>
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span class="text">Belarus, Minsk</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-mobile" aria-hidden="true"></i></span>
+                            <span class="text">+375 (29) 858-71-87</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <span class="text">igor1mesko@gmail.com</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
+                            <span class="text">IgorMesko</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="information education">
+                    <h3 class="title">Education</h3>
+                    <ul>
+                        <li>
+                            <h5>2010 - 2015</h5>
+                            <h4>Belarusian National Technical University</h4>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="information courses">
+                    <h3 class="title">Courses</h3>
+                    <ul>
+                        <li>
+                            <h5>2022</h5>
+                            <h4>Computer science basic (EPAM learning platform)</h4>
+                        </li>
+                        <li>
+                            <h5>2022</h5>
+                            <h4>Redev course</h4>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="information languages">
+                    <h3 class="title">Languages</h3>
+                    <ul>
+                        <li>
+                            <span class="text">Belarusian/Russian – native</span>
+                        </li>
+                        <li>
+                            <span class="text">English – B1</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="rigth-side">
+                <div class="about">
+                    <h2 class="summary">Summary</h2>
+                    <p>Hi! <br> My name is Igor, and I am the novice developer you are looking for! I have no experience in commercial development, but I am ready to start working with pleasure! <br>
+                        My stack: JavaScript/NodeJS. <br>
+                        If you are looking for a motivated developer, then dial my number. <br>
+                        There are several projects deployed on Heroku. <br> The source code of the projects is available in my GitHub.</p>
+                </div>
+
+                <div class="about">
+                    <h2 class="summary">Working experience</h2>
+                    <div class="box">
+                        <div class="year">
+                            <h4>2015 - present time</h4>
+                            <h4>JSC “Peleng”</h4>
+                        </div>
+                        <div class="text">
+                            <h4>Engineer</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about">
+                    <h2 class="summary">Skills</h2>
+                    <div class="box">
+                        <div class="hard">
+                            <h3>Hard Skills</h3>
+                            <ul>
+                                <li class="text">JavaScript</li>
+                            </ul>
+                            <ul>
+                                <li class="text">Node.js</li>
+                            </ul>
+                            <ul>
+                                <li class="text">Git</li>
+                            </ul>
+                            <ul>
+                                <li class="text">MongoDB/PostgreSQL/MySQL</li>
+                            </ul>
+                            <ul>
+                                <li class="text">Sequelize ORM</li>
+                            </ul>
+                            <ul>
+                                <li class="text">Chai/Mocha</li>
+                            </ul>
+                            <ul>
+                                <li class="text">GraphQL</li>
+                            </ul>
+                        </div>
+                        <div class="soft">
+                            <h3>Soft Skills</h3>
+                            <ul>
+                                <li class="text">Teamplayer</li>
+                            </ul>
+                            <ul>
+                                <li class="text">Hardworking</li>
+                            </ul>
+                            <ul>
+                                <li class="text">Organised</li>
+                            </ul>
+                            <ul>
+                                <li class="text">Flexible</li>
+                            </ul>
+                            <ul>
+                                <li class="text">Creative</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about">
+                    <h2 class="summary">Code example</h2>
+                    <div class="box">
+                        <pre class="code">
+function anagram(arr) {
+    let result = 0;
+    for(let i = 0; i &lt arr.length; i++) {
+        let word = arr[0].split('').sort().join('');
+        if(arr[i].split('').sort().join('') === word) {
+            result = true;
+        } else {
+            result = false;
+        }
+    }
+    return result;
+}
+                        </pre>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <a class="footer__gitImg" href="https://github.com/IgorMesko/rsschool-cv">
+                <img src="./assets/img/git.jpg" alt="logo">
+            </a>
+            <p>2022</p>
+            <a href="https://rs.school/js/"><img src="./assets/img/rs_school_js.svg" alt="logo"></a>
+        </footer>
+    </div>
+</body>
+</html>
