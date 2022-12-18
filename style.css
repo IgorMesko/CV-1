@@ -237,3 +237,15 @@ p
 .footer__gitImg {
     border-radius: 50%;
 }
+
+@media (max-width: 1000px)
+{
+    .main 
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container
+    {
+        margin: 10px;
+    }
+}
